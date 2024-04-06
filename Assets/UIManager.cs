@@ -23,6 +23,10 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI failCounterText;
 
+    [SerializeField]
+    private TextMeshProUGUI currentEmotionText;
+    [SerializeField]
+    private TextMeshProUGUI emotionLevelText;
 
     void Start()
     {
@@ -38,8 +42,10 @@ public class UIManager : MonoBehaviour
 
     public void Emotion(string text1, string text2)
     {
-        Debug.Log("text1 = " + text1);
-        Debug.Log("text2 = " + text2);
+        currentEmotionText.text = text2;
+        emotionLevelText.text = text1;
+        //Debug.Log("text1 = " + text1);
+        //Debug.Log("text2 = " + text2);
     }
 
     public void GatherGoal(string goal)
