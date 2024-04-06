@@ -1,0 +1,30 @@
+{
+    "Type": "Live2D Expression",
+    "Parameters": [
+        {
+            "Id": "RArmSet1",
+            "Value": -1.0,
+            "Blend": "Add"
+        },
+        {
+            "Id": "RArmSet3",
+            "Value": 1.0,
+            "Blend": "Add"
+        },
+        {
+            "Id": "ArmRSet3_Shoulder",
+            "Value": 10.0,
+            "Blend": "Add"
+        },
+        {
+            "Id": "ArmRSet3_Elbow",
+            "Value": 10.0,
+            "Blend": "Add"
+        },
+        {
+            "Id": "ArmRSet3_Wrist",
+            "Value": -10.0,
+            "Blend": "Add"
+        }
+    ]
+}

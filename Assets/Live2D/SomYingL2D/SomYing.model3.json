@@ -1,0 +1,25 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "SomYing.moc3",
+		"Textures": [
+			"SomYing.2048/texture_00.png",
+			"SomYing.2048/texture_01.png",
+			"SomYing.2048/texture_02.png"
+		],
+		"Physics": "SomYing.physics3.json",
+		"DisplayInfo": "SomYing.cdi3.json"
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		}
+	]
+}
