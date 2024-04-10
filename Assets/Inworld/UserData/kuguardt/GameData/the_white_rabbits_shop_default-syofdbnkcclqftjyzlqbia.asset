@@ -13,21 +13,9 @@ MonoBehaviour:
   m_Name: the_white_rabbits_shop_default-syofdbnkcclqftjyzlqbia
   m_EditorClassIdentifier: 
   sceneFullName: workspaces/default-syofdbnkcclqftjyzlqbia/scenes/the_white_rabbits_shop
-  apiKey: xcCBl1RlBLyexdYzlSyM3ssBiIDWz8H5
-  apiSecret: l84DN90Bqk1iesv9VfmEeKQXai361UcYR2drTUeEe9Z6eqT5k9QjopNfT7VZdBbz
-  characters:
-  - agentId: 
-    brainName: workspaces/default-syofdbnkcclqftjyzlqbia/characters/the_white_rabbit
-    givenName: The White Rabbit
-    characterAssets:
-      rpmModelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/a307f8d1-b703-404a-a70e-951495131667.glb
-      rpmImageUriPortrait: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/a307f8d1-b703-404a-a70e-951495131667_portrait.jpg
-      rpmImageUriPosture: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/a307f8d1-b703-404a-a70e-951495131667_posture.jpg
-      avatarImg: https://storage.googleapis.com/inworld-ai-usercontent-prod/2d_image/5ee83cf8-5215-4d2e-9a9d-9fb436e5e1a1.jpg
-      avatarImgOriginal: https://storage.googleapis.com/inworld-ai-usercontent-prod/2d_image/5ee83cf8-5215-4d2e-9a9d-9fb436e5e1a1-original.jpg
-      thumbnailProgress: 0
-      avatarProgress: 0
-    thumbnail: {fileID: 0}
+  apiKey: 41JM6OsGoXqPdva8an49cTactsPCW9FP
+  apiSecret: Nra9bBdoBkfI2iM230AJhmJuBCavZFg24YP4IMMFWlKjG1YEjBArExQ2Xa9Gnrla
+  characters: []
   capabilities:
     audio: 1
     emotions: 1
