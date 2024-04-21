@@ -126,7 +126,10 @@ public class UIManager : MonoBehaviour
                 DeactivePanel();
                 checkInPanel.SetActive(true);
                 break;
-
+            case "FailureToCheckIn":
+                DeactivePanel();
+                startPanel.SetActive(true);
+                break;
             default:
                 Debug.LogError("Goal is not valid : " + goal);
                 break;
@@ -143,12 +146,29 @@ public class UIManager : MonoBehaviour
 
         failCounterText.gameObject.SetActive(true);
         failCounterText.SetText("Fail count : " + amount.ToString());
+        if (amount >= 3)
+        {
+            DeactivePanel();
+            SendText("FailureToCheckIn");
+        }
+    }
+
+    public void ToggleSubtitle()
+    {
+        if (subtitlePanel.activeSelf == false)
+        {
+            subtitlePanel.SetActive(true);
+        }
+        else
+        {
+            subtitlePanel.SetActive(false);
+        }
     }
 
     private IEnumerator ShowSubtitle(string dialog)
     {
         subtitleText.text = dialog;
-        subtitlePanel.SetActive(true);
+        //subtitlePanel.SetActive(true);
         yield return new WaitForSeconds(subtitleTime);
         //subtitlePanel.SetActive(false);
     }
