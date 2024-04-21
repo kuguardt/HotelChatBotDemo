@@ -60,7 +60,8 @@ public class UIManager : MonoBehaviour
         subtitleText2.text = name;
         if (name.Length == 36)
         {
-            StartCoroutine(ShowSubtitle(dialog));
+            subtitleText.text = dialog;
+            //StartCoroutine(ShowSubtitle(dialog));
         }
         //subtitleText.text = dialog;
         //subtitleText.text = name;
