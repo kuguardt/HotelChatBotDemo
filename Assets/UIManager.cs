@@ -28,6 +28,15 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI emotionLevelText;
 
+    [SerializeField]
+    private float subtitleTime = 0.0f;
+    [SerializeField]
+    private GameObject subtitlePanel;
+    [SerializeField]
+    private TextMeshProUGUI subtitleText;
+    [SerializeField]
+    private TextMeshProUGUI subtitleText2;
+
     void Start()
     {
         DeactivePanel();
@@ -40,12 +49,21 @@ public class UIManager : MonoBehaviour
         StartCoroutine(Delay(1.0f,text));
     }
 
-    public void Emotion(string text1, string text2)
+    public void Emotion(string level, string emotion)
     {
-        currentEmotionText.text = text2;
-        emotionLevelText.text = text1;
-        //Debug.Log("text1 = " + text1);
-        //Debug.Log("text2 = " + text2);
+        currentEmotionText.text = emotion;
+        emotionLevelText.text = level;
+    }
+
+    public void Subtitle(string name, string dialog)
+    {
+        subtitleText2.text = name;
+        if (name.Length == 36)
+        {
+            StartCoroutine(ShowSubtitle(dialog));
+        }
+        //subtitleText.text = dialog;
+        //subtitleText.text = name;
     }
 
     public void GatherGoal(string goal)
@@ -125,6 +143,14 @@ public class UIManager : MonoBehaviour
 
         failCounterText.gameObject.SetActive(true);
         failCounterText.SetText("Fail count : " + amount.ToString());
+    }
+
+    private IEnumerator ShowSubtitle(string dialog)
+    {
+        subtitleText.text = dialog;
+        subtitlePanel.SetActive(true);
+        yield return new WaitForSeconds(subtitleTime);
+        //subtitlePanel.SetActive(false);
     }
 
     public void DeactivePanel()

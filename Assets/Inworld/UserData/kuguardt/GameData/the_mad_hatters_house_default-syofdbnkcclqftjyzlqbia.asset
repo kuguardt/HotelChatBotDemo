@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: the_mad_hatters_house_default-syofdbnkcclqftjyzlqbia
   m_EditorClassIdentifier: 
   sceneFullName: workspaces/default-syofdbnkcclqftjyzlqbia/scenes/the_mad_hatters_house
-  apiKey: d8CSfy7ywuihzmurT6QeUIKCtjiLvvSI
-  apiSecret: R70FWJ7hqwH1zz1A8rJ7KrBbjLDwD9urad6zrr4qUsRXNa1EQbAPH2eZXn9Kuat0
+  apiKey: 41JM6OsGoXqPdva8an49cTactsPCW9FP
+  apiSecret: Nra9bBdoBkfI2iM230AJhmJuBCavZFg24YP4IMMFWlKjG1YEjBArExQ2Xa9Gnrla
   characters:
   - agentId: 
     brainName: workspaces/default-syofdbnkcclqftjyzlqbia/characters/the_mad_hatter
